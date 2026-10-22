@@ -9,12 +9,16 @@ public class Pet {
 
 //5)
     public String definirPorte() {
-        if(peso >= 30){
-            return "Porte: grande";
-        }else if(peso >= 15){
-            return "Porte: médio";
+        if(peso >= 25){
+            return "grande";
+        }else if(peso >= 10){
+            return "médio";
         }else{
-            return "Porte: pequeno";
+            return "pequeno";
         }
+    }
+
+    public void emitirSom(){
+        System.out.println("Emitindo som");
     }
 }
